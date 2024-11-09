@@ -75,7 +75,7 @@ async function updateQuestion() {
   curKnown = cardsSortByKnown[curCardRoll].known
 
 }
-function updateText(text:String){
+function updateText(text:string){
   
   
   return {__html: text};
