@@ -58,7 +58,7 @@ async function updateQuestion() {
     orderBy: [{known:'asc'}]
   })
   let curCardRoll
-  let curSegRoll = getRandomInt(0,2)
+  const curSegRoll = getRandomInt(0,2)
   
   //get known card 1/3 of time
   if (curSegRoll == 0){
@@ -132,7 +132,7 @@ export default async function Home() {
       }}>
       <button className="ansButton">False</button>
     </form>
-    
+
       <Link href='/'>Next Question</Link>
     </div>
 
