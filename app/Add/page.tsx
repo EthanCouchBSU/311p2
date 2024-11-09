@@ -1,4 +1,4 @@
-import { PrismaClient} from '@prisma/client'
+import { PrismaClient, Prisma } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
@@ -15,12 +15,12 @@ async function truncate(){
 async function addCard(formData:FormData){
     
     'use server'
-    const value = parseInt(formData.get("answer"), 10)
+    const value = parseInt(formData.get("answer") as string) 
     
     await prisma.cards.create({
         data:{
             
-            question: formData.get("qAnswer"),
+            question: formData.get("qAnswer") as string,
             is_true: value,
             known: 0
         }
