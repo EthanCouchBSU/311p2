@@ -1,6 +1,7 @@
 
 
 import { PrismaClient} from '@prisma/client'
+import Link from "next/link";
 
 
 
@@ -56,8 +57,8 @@ async function updateQuestion() {
   const cardsSortByKnown = await prisma.cards.findMany({
     orderBy: [{known:'asc'}]
   })
-  var curCardRoll
-  var curSegRoll = getRandomInt(0,2)
+  let curCardRoll
+  let curSegRoll = getRandomInt(0,2)
   
   //get known card 1/3 of time
   if (curSegRoll == 0){
@@ -131,7 +132,8 @@ export default async function Home() {
       }}>
       <button className="ansButton">False</button>
     </form>
-      <a href='/'>Next Question</a>
+    
+      <Link href='/'>Next Question</Link>
     </div>
 
     

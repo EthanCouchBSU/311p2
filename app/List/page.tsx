@@ -2,7 +2,7 @@
 import { PrismaClient } from "@prisma/client"
 
 const prisma = new PrismaClient()
-function valToText(val){
+function valToText(val:number){
     if(val == 1){
         return "True"
     }
