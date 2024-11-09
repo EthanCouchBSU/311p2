@@ -7,8 +7,8 @@ export default function Home() {
           <h1>MemoryMax!</h1>
         </div>
         <Link href = "/">Learn </Link>
-        <Link href = "/List">View All Cards </Link>
-        <Link href = "/Add">Add A Card </Link>
+        <Link href = "/List">List</Link>
+        <Link href = "/Add">Add</Link>
       </nav>
     );
   }

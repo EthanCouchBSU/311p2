@@ -3,17 +3,49 @@
 @tailwind utilities;
 
 body{
-  background: #d3e5ee;
+  background: #848c9a;
   color: #23202a;
   font-family: 'Times New Roman', Times, serif;
+  font-size: large;
 }
 a{
+  max-height: 100px;
+  min-width: 60px;
+  
+  border-top: solid;
+  border-right: solid;
+  padding: 5px;
   color:  #1d1e1f;
 }
-.content{
+.pageContent{
   
-  max-width: 900px;
-  margin: 0 auto;
+  padding: 5px;
+  max-width: 800px;
+  min-height: 900px;
+  margin: 5px auto;
+}
+.content{
+  padding: 5px;
+  min-height: 900px;
+  background-color: #f3f3f3
+}
+.addPrompt{
+  border-top: solid;
+  border-right: solid;
+  padding: 1px;
+  margin: 10px;
+  color:  #1d1e1f;
+}
+.addButton{
+  border-top: solid;
+  border-right: solid;
+  padding: 1px;
+  margin: 10px;
+  color:  #1d1e1f;
+}
+.addButton:hover{
+  border-color: rgb(47, 144, 213);
+
 }
 nav{
   
@@ -28,14 +60,55 @@ nav a{
   color:  #1d1e1f;
   margin-left: 50px;
 }
+a:hover{
+  border-color: rgb(47, 144, 213);
+}
 .questionaire{
-  margin-left: auto;
+  margin: 15px auto 50px;
+  padding-left: 1px;
   
+  
+}
+.difButtonsContainer{
+  display: flex;
+  justify-content: center;
+}
+.answerButtonsContainer{
+  display: flex;
+  justify-content: center;
+}
+.QuestionContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  font-size: xx-large;
+  min-height: 200px;
+  
+  border-top: solid;
+  border-right: solid;
+  padding: 5px;
+  color:  #1d1e1f;
+}
+.ansButton{
+  
+  max-height: 100px;
+  min-width: 70px;
+  margin-right: 100px;
+  
+  border-top: solid;
+  border-right: solid;
+  padding: 5px;
+  color:  #1d1e1f;
+}
+.ansButton:hover{
+  
+  border-color: rgb(47, 144, 213);
 }
 
 nav .title{
   font-size: larger;
   font-weight: bolder;
-  
+  padding-left: 5%;
   margin-right: auto;
 }

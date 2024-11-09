@@ -1,7 +1,26 @@
-export default function Home() {
+import { useState } from "react";
+import { PrismaClient } from "@prisma/client"
+
+const prisma = new PrismaClient()
+function valToText(val){
+    if(val == 1){
+        return "True"
+    }
+        
+    else{
+        return "False"
+    }
+    
+
+
+}
+
+export default async function Home() {
+    const cardsl = await prisma.cards.findMany();
+    const cardEl = cardsl.map((cards) => <li>ID:{cards.id} - {cards.question} Answer: {valToText(cards.is_true)} Known Value: {cards.known}</li>)
     return (
-     <div>
-      all cards
-     </div>
+    <main>
+        {cardEl}
+    </main>
     );
-  }
+}
