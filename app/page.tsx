@@ -1,16 +1,16 @@
 
 
-import { PrismaClient, Prisma } from '@prisma/client'
+import { PrismaClient} from '@prisma/client'
 
 
 
 
 
-var curKnown = 0;
-var curId = 0;
-var curText = "";
-var curCorAns = 0;
-var selKnown = 0;
+let curKnown = 0;
+let curId = 0;
+let curText = "";
+let curCorAns = 0;
+let selKnown = 0;
 
 const prisma = new PrismaClient();
 
