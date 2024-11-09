@@ -75,10 +75,10 @@ async function updateQuestion() {
   curKnown = cardsSortByKnown[curCardRoll].known
 
 }
-function trial(){
+function updateText(text:String){
   
   
-  return {__html: curText};
+  return {__html: text};
   
 }
 export default async function Home() {
@@ -112,7 +112,7 @@ export default async function Home() {
           </div>
     
     <div id = "questionContainer" className="QuestionContainer" 
-    dangerouslySetInnerHTML={trial()}>
+    dangerouslySetInnerHTML={updateText(curText)}>
     
     </div>
 

@@ -20,8 +20,9 @@ a{
 .pageContent{
   
   padding: 5px;
-  max-width: 800px;
+  max-width: 900px;
   min-height: 900px;
+  min-width: 500px;
   margin: 5px auto;
 }
 .content{
@@ -49,7 +50,7 @@ a{
 }
 nav{
   
-  margin: 15px auto 50px;
+  margin: 5px auto 30px;
   padding: 10px;
   display: flex;
   justify-content:flex-end;
@@ -94,7 +95,7 @@ a:hover{
   
   max-height: 100px;
   min-width: 70px;
-  margin-right: 100px;
+  margin-right: 50px;
   
   border-top: solid;
   border-right: solid;
@@ -109,6 +110,7 @@ a:hover{
 nav .title{
   font-size: larger;
   font-weight: bolder;
-  padding-left: 5%;
+  display: flex;
+  justify-content: flex-start;
   margin-right: auto;
 }
